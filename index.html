@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday สีกาแพท 🎂💕</title>
+  <meta name="description" content="เว็บวันเกิดสุดพิเศษสำหรับสีกาแพท — ด้วยความรัก" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Kanit:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particles canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Music control -->
+  <button id="musicBtn" class="music-btn" title="เปิด/ปิดเพลง">
+    <span id="musicIcon">🎵</span>
+  </button>
+
+  <!-- Envelope intro screen -->
+  <div id="envelope-screen" class="envelope-screen">
+    <div class="env-glow"></div>
+    <div class="envelope-wrapper">
+      <div class="envelope" id="envelope">
+        <div class="envelope-top"></div>
+        <div class="envelope-body">
+          <div class="heart-seal">💌</div>
+          <p class="open-hint">แตะเพื่อเปิด</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content (hidden initially) -->
+  <main id="main" class="main hidden">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="floating-hearts" id="floatingHearts"></div>
+
+      <div class="hero-content">
+        <div class="hero-image-wrapper">
+          <img src="photos/photo1.png" alt="สีกาแพท" class="hero-img" id="heroImg" />
+          <div class="hero-ring"></div>
+        </div>
+
+        <div class="title-block">
+          <p class="subtitle-pre">✨ Happy Birthday ✨</p>
+          <h1 class="main-title">สีกาแพท</h1>
+          <div class="title-deco">
+            <span class="heart-deco">💕</span>
+            <span class="deco-line"></span>
+            <span class="heart-deco">💕</span>
+          </div>
+          <p class="hero-date">🎂 22 ตุลาคม 2026 🎂</p>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>เลื่อนลงมา</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- Wish Letter Section -->
+    <section class="wish-section">
+      <div class="section-wrapper">
+        <div class="letter-card">
+          <div class="letter-header">
+            <span class="letter-icon">💌</span>
+            <h2 class="section-title">ข้อความถึงคุณ</h2>
+          </div>
+          <div class="letter-body">
+            <p class="letter-text">
+              ถึง สีกาแพท ที่รัก...
+            </p>
+            <p class="letter-text">
+              สุขสันต์วันเกิดนะสีกาแพท 🎂
+              ขอให้ปีนี้เป็นปีที่เต็มไปด้วยความสุขและความสำเร็จในทุกๆ ด้าน ✨
+            </p>
+            <p class="letter-text">
+              โดยเฉพาะเรื่องงาน ขอให้ทุกโอกาสมาในเวลาที่เหมาะสม
+              ได้ทำในสิ่งที่ชอบ ก้าวหน้าโดดเด่น และได้รับผลตอบแทนที่คุ้มค่าความพยายาม 💼🌟
+            </p>
+            <p class="letter-text">
+              ขอให้มีพลังใจและแรงบันดาลใจใหม่ๆ ที่ทำให้ทุกวันเป็นวันที่ดีขึ้นเรื่อยๆ 💜
+            </p>
+            <p class="letter-text">
+              และหวังว่าเราจะได้สร้างความทรงจำดีๆ ร่วมกันในปีนี้นะ 🌸
+            </p>
+            <p class="letter-sign">ด้วยรักและความปรารถนาดีเสมอ 💕</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+      <div class="section-wrapper">
+        <h2 class="section-title centered">💖 ความทรงจำที่สวยงาม</h2>
+        <p class="section-sub">ช่วงเวลาที่น่าจดจำ</p>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" style="--d:0">
+            <img src="photos/photo1.png" alt="สีกาแพท 1" class="gallery-photo" />
+          </div>
+          <div class="gallery-item" style="--d:1">
+            <img src="photos/photo2.png" alt="สีกาแพท 2" class="gallery-photo" />
+          </div>
+          <div class="gallery-item" style="--d:2">
+            <img src="photos/photo3.png" alt="สีกาแพท 3" class="gallery-photo" />
+          </div>
+          <div class="gallery-item" style="--d:3">
+            <img src="photos/photo4.jpg" alt="สีกาแพท 4" class="gallery-photo" />
+          </div>
+          <div class="gallery-item large" style="--d:4">
+            <img src="photos/photo5.png" alt="สีกาแพท 5" class="gallery-photo" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Candle Wish Section -->
+    <section class="candle-section">
+      <div class="section-wrapper">
+        <h2 class="section-title centered">🕯️ เป่าเทียนวันเกิด</h2>
+        <p class="section-sub">กดที่เทียนเพื่ออธิษฐาน ✨</p>
+        <div class="cake-wrapper">
+          <div class="cake">
+            <div class="cake-top">
+              <div class="candles" id="candles">
+                <div class="candle-wrap" data-lit="true">
+                  <div class="flame"><div class="flame-inner"></div></div>
+                  <div class="candle-body pink"></div>
+                </div>
+                <div class="candle-wrap" data-lit="true">
+                  <div class="flame"><div class="flame-inner"></div></div>
+                  <div class="candle-body purple"></div>
+                </div>
+                <div class="candle-wrap" data-lit="true">
+                  <div class="flame"><div class="flame-inner"></div></div>
+                  <div class="candle-body rose"></div>
+                </div>
+                <div class="candle-wrap" data-lit="true">
+                  <div class="flame"><div class="flame-inner"></div></div>
+                  <div class="candle-body lavender"></div>
+                </div>
+                <div class="candle-wrap" data-lit="true">
+                  <div class="flame"><div class="flame-inner"></div></div>
+                  <div class="candle-body pink"></div>
+                </div>
+              </div>
+              <div class="cake-frosting"></div>
+            </div>
+            <div class="cake-body">
+              <div class="cake-decoration">
+                <span>Happy Birthday 🎂</span>
+              </div>
+            </div>
+          </div>
+          <p id="wishMsg" class="wish-msg"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="closing-section">
+      <div class="section-wrapper">
+        <div class="closing-card">
+          <div class="star-burst">⭐</div>
+          <p class="closing-script">สุขสันต์วันเกิด</p>
+          <h2 class="closing-name">สีกาแพท</h2>
+          <p class="closing-sub">ขอให้มีความสุขมาก ๆ ตลอดไป 💜</p>
+          <div class="hearts-row">
+            <span>💕</span><span>💜</span><span>🌸</span><span>💕</span><span>💜</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Hidden YouTube Player -->
+  <div id="yt-player-container" style="position:fixed;bottom:-9999px;left:-9999px;width:1px;height:1px;overflow:hidden;pointer-events:none;" aria-hidden="true">
+    <div id="yt-player"></div>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
